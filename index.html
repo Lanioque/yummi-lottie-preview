@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Yummi · Lottie preview</title>
+<style>
+  body{margin:0;background:#F3EEE3;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#2A241D}
+  .head{text-align:center;padding:28px 16px 8px}
+  .head h1{margin:0;font-size:24px}.head h1 b{color:#FA5104}
+  .head p{margin:6px 0 0;color:#8A7E70;font-size:14px}
+  .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:1100px;margin:18px auto;padding:0 18px 40px}
+  .card{background:#FBF8F1;border:1px solid #EEE4D4;border-radius:18px;padding:14px;display:flex;flex-direction:column;align-items:center}
+  .anim{width:100%;height:220px}
+  .lbl{font-size:15px;font-weight:600;margin-top:8px}
+  .sub{font-size:12px;color:#8A7E70;margin-top:2px}
+  .sub a{color:#FA5104;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="head"><h1>Yummi<b>!</b> · Lottie preview</h1><p>Community LottieFiles animations (vector) — candidates for the app</p></div>
+<div class="wrap">
+  <div class="card"><div class="anim" id="a1"></div><div class="lbl">Loader · cooking (hero)</div><div class="sub"><a href="https://lottiefiles.com/free-animation/cooking-animation-Pt0qVDpNxK">source</a></div></div>
+  <div class="card"><div class="anim" id="a2"></div><div class="lbl">Loader · food</div><div class="sub"><a href="https://lottiefiles.com/free-animation/food-loading-4mEgEChDoW">source</a></div></div>
+  <div class="card"><div class="anim" id="a3"></div><div class="lbl">Success · premium</div><div class="sub"><a href="https://lottiefiles.com/free-animation/animated-checkmark-with-confetti-zOhZc4gVJk">source</a></div></div>
+  <div class="card"><div class="anim" id="a4"></div><div class="lbl">Success · light</div><div class="sub"><a href="https://lottiefiles.com/free-animation/success-with-confetti-k7iTuWwkOY">source</a></div></div>
+  <div class="card"><div class="anim" id="a5"></div><div class="lbl">Empty state</div><div class="sub"><a href="https://lottiefiles.com/free-animation/empty-state-DTHrg90LlC">source</a></div></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script>
+function L(id,f){lottie.loadAnimation({container:document.getElementById(id),renderer:"svg",loop:true,autoplay:true,rendererSettings:{preserveAspectRatio:"xMidYMid meet"},path:f});}
+L('a1','lf_cooking.json');L('a2','lf_food_loading.json');L('a3','lf_checkmark_confetti.json');L('a4','lf_success_confetti.json');L('a5','lf_empty_state.json');
+</script>
+</body>
+</html>
